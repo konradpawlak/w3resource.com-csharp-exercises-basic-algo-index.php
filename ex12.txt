@@ -1,0 +1,21 @@
+using System;
+
+namespace w3resource
+{
+    class Program
+    {
+        public static bool test(string s)
+        {
+            return s.Substring(0, 2) == "C#";
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine(test("masterofpuppets"));
+            Console.WriteLine(test("C#fadetoblack"));
+            Console.WriteLine(test("c#jol"));
+            Console.WriteLine(test("STUmilowyLAS"));
+
+            Console.ReadKey();
+        }
+    }
+}
