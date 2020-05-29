@@ -1,0 +1,25 @@
+//BOTH ARE BAD - SEE 1ST TEST
+
+using System;
+
+namespace w3resource
+{
+    class Program
+    {
+        public static bool test(int x, int y)
+        {
+            //return (x >= 100 && x <= 200) || (y >= 100 && y <= 200);
+            int min = 100, max = 200;
+            return (x >= min && x <= max) || (y >= min && y <= max) ? true : false;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine(test(0, 150));
+            Console.WriteLine(test(150, 199));
+            Console.WriteLine(test(50, 222));
+            Console.WriteLine(test(550, 600));
+
+            Console.ReadKey();
+        }
+    }
+}
