@@ -1,0 +1,21 @@
+using System;
+
+namespace w3resource
+{
+    class Program
+    {
+        public static string test(string s)
+        {
+            return s.Length > 3 ? s.Substring(0, 3) + s + s.Substring((s.Length-3), 3) : s+s+s ;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine(test("masterofpuppets"));
+            Console.WriteLine(test("fadetoblack"));
+            Console.WriteLine(test("jol"));
+            Console.WriteLine(test("STUmilowyLAS"));
+
+            Console.ReadKey();
+        }
+    }
+}
