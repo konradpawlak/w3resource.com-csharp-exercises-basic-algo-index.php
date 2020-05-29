@@ -1,0 +1,21 @@
+using System;
+
+namespace w3resource
+{
+    class Program
+    {
+        public static bool test(int x)
+        {
+            return x % 3 == 0 || x % 7 == 0;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine(test(21));
+            Console.WriteLine(test(3));
+            Console.WriteLine(test(5));
+            Console.WriteLine(test(7));
+
+            Console.ReadKey();
+        }
+    }
+}
